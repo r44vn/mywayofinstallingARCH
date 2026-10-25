@@ -1,4 +1,4 @@
-##1 - Partitionning##
+## 1 - Partitionning
 
 uefi-gpt layout (the order is random);
 boot part;	/boot			fat32		1gb
@@ -6,19 +6,19 @@ RAM part;	[swap]			swap(w mkswap)	4-10gb
 home part; 	/home			ext4		user files
 root part;	/			ext4		systemfiles (packages, etc..)
 
-	partition creation;
+### partition creation;
 
 ##things to know; if you want a dualboot windows, putting the boot partition first is required
 
-$ fdisk /dev/sda
-$ g
-create gpt disklabel part
-$ n
-part number default
-first sector default
-$ +2G
-create a partition of 2 GiB
-repeat for the other partitions (change size)
+    $ fdisk /dev/sda
+    $ g
+    create gpt disklabel part
+    $ n
+    part number default
+    first sector default
+    $ +2G
+    create a partition of 2 GiB
+    repeat for the other partitions (change size)
 
 	partition formating;
 
