@@ -18,6 +18,7 @@ create gpt disklabel part
     $ n
     
 part number default (ENTER)
+
 first sector default (ENTER)
     
 create a partition of 2 GiB
@@ -61,3 +62,6 @@ enable the swap volume with swapon
 create the mountpoint file 'mnt/home' + mount the boot partition on it
 
 	$ mount --mkdir /dev/sdaX /mnt/home
+
+
+lets meet in the part 2 to continue l:
